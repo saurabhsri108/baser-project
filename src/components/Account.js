@@ -39,11 +39,8 @@ const Account = ({ session }) => {
         .download(path);
       if (error) throw error;
 
-      // console.log({ data, error });
-
       if (data) {
         const url = URL.createObjectURL(data);
-        // console.log({ url });
         setAvatarUrl(url);
       }
     } catch (error) {
